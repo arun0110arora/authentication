@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any('/',  function(){
+	return redirect()->route('home');
+});
+
 Route::any('login', 'AuthController@login')->name('login');
 Route::any('logout', 'AuthController@logout')->name('logout');
 Route::any('register', 'AuthController@register')->name('register');

@@ -22,6 +22,14 @@
         <span class="error" id="password_err">{{ $errors->first('password') }}</span>
     </div>
     <div class="form-group">
+        <select name="role">
+            <option value="">Select role</option>
+            <option value="U">User</option>
+            <option value="A">Admin</option>
+        </select>
+        <span class="error" id="password_err">{{ $errors->first('role') }}</span>
+    </div>
+    <div class="form-group">
         <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" value="{{ old('confirm_password') }}">
         <span class="error" id="password_err">{{ $errors->first('confirm_password') }}</span>
     </div>
